@@ -9,7 +9,11 @@ python -m venv /path/to/new/virtual/environment
 
 source <venv>/bin/activate
 
-# 3. Move to task_scheduler directory
+# 3.a Clone the repo
+
+git clone https://github.com/Rishi-jha/task_scheduler.git
+
+# 3.b Move to task_scheduler directory
 
 cd task_scheduler 
 
