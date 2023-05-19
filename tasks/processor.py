@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 
 class TaskProcessor:
     """
-    Picks up memos when their scheduled_at time has come.
+    Picks up tasks when their scheduled_at time has come.
     """
 
     @staticmethod
