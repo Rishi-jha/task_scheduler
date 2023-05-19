@@ -130,3 +130,5 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 CELERY_BROKER_URL = "amqp://dev:dev@localhost:5672"
 CELERY_RESULT_BACKEND = "django-db"
 CELERY_RESULT_EXTENDED = True
+LOGIN_URL = "/login/"
+LOGIN_REDIRECT_URL = "/"

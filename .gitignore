@@ -1,0 +1,42 @@
+# Editors specific files
+## Emacs
+*~
+\#*\#
+.\#*
+.projectile
+TAGS
+##Vim
+*.swp
+## Jetbrains
+.idea
+*.iml
+.vscode
+# Vagrant
+.vagrant/
+
+# Python
+*.pyc
+*.egg-info
+.env
+.venv
+
+# Django
+*.mo
+
+# Logs
+*console.log
+# Direnv
+.envrc.local
+
+# Unknown
+.ropeproject
+.DS_Store
+
+
+#eclipse
+.pydevproject
+.project
+
+# Tools & caches
+.mypy_cache/
+

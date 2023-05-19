@@ -1,12 +1,13 @@
+from django.conf import settings
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import resolve_url
 from django.contrib.auth import views as auth_views
 
 # Create your views here.
 from django.urls import reverse
 from django.contrib import messages
 from django.views import generic
-from django.views.generic import TemplateView, FormView, ListView
+from django.views.generic import FormView
 from django_celery_results.models import TaskResult
 from django.db.models import TextField
 from django.db.models.functions import Cast
@@ -75,4 +76,4 @@ class CancelTaskView(generic.View):
 
 
 login = auth_views.LoginView.as_view()
-logout = auth_views.LogoutView.as_view()
+logout = auth_views.logout_then_login
